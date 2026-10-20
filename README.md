@@ -83,14 +83,17 @@ model degrades first. Curse of dimensionality, observed rather than recited.
 
 ## Repository contents
 
-This repository documents the study and its analysis. The training code is not
-public — it lived in a shared university workspace and is not clean enough to publish
-as-is.
-
+- `code/` — the notebooks from the project: preprocessing, transformation, and the
+  SVM, logistic regression and random forest runs
 - `figures/` — the pipeline diagram and the five confusion matrices from the paper
 - `analysis/confusion-matrix-forensics.md` — every matrix decoded cell by cell, with
   metrics recomputed from the cells and the discrepancies with the published table
   written down
+
+**Not included:** the CNN and KNN notebooks, and the processed CSVs (about 115 MB;
+they are rebuilt by running `code/preprocessing.ipynb` against the Kaggle corpus).
+The notebooks are published as they were written in 2023 — unpolished, and they assume
+`Output.csv`, `TestSet.csv` and the preprocessed CSVs sit beside them.
 
 ## Limitations
 
